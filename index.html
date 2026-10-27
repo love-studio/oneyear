@@ -1,4 +1,582 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#200d1b"><title>Krithika — Our First Hello</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet"><style>:root{--rose:#f6a9bd;--cream:#fff0e9;--bg:#200d1b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}body:before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,#6b2b4c80,transparent 55%),radial-gradient(ellipse at 80% 75%,#60254280,transparent 55%);pointer-events:none;z-index:-1}.sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:4}.heart{position:absolute;bottom:-60px;animation:floatUp linear infinite;opacity:.45}.heart svg{width:100%;height:100%;fill:#f6a9bd;filter:drop-shadow(0 0 8px #ff90b5)}@keyframes floatUp{0%{transform:translateY(0) rotate(-12deg);opacity:0}15%{opacity:.5}85%{opacity:.35}100%{transform:translateY(-115vh) rotate(20deg);opacity:0}}section{position:relative;min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:95px 20px}.eyebrow{text-transform:uppercase;letter-spacing:.32em;color:#f9bac9;font-size:11px;font-weight:600}h1,h2{font-family:'Playfair Display',serif;font-weight:500;line-height:1.12;margin:18px 0}h1{font-size:clamp(58px,11vw,130px)}h2{font-size:clamp(40px,7vw,76px)}h1 em,h2 em{color:var(--rose);font-weight:500}p{line-height:1.85}.intro{min-height:100svh}.intro .sub{max-width:550px;color:#e5c9d2;font-size:17px}.pill{border:1px solid #f8b8ca90;background:#f4a7bf20;color:#fff3f5;border-radius:99px;padding:16px 28px;font:600 12px 'DM Sans',sans-serif;letter-spacing:.13em;cursor:pointer;margin-top:28px;transition:.3s}.pill:hover{background:#f4a7bf45;transform:translateY(-3px)}.hero-photo{width:min(340px,72vw);height:420px;object-fit:cover;border-radius:170px 170px 18px 18px;box-shadow:0 24px 100px #0009;border:1px solid #ffccda65;margin-top:30px}.scroll{position:absolute;bottom:30px;color:#db9db0;font-size:11px;letter-spacing:.2em}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;width:min(1040px,100%);margin-top:50px}.card{background:#ffffff0d;border:1px solid #ffffff24;padding:12px 12px 20px;border-radius:18px;transform:rotate(var(--rot));transition:transform .3s}.card:hover{transform:rotate(0) translateY(-10px)}.card img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:11px}.card p{margin:12px 0 0;color:#f5c6d1;font-family:'Playfair Display',serif;font-style:italic;font-size:20px}.story{max-width:730px;font-size:clamp(18px,2.5vw,25px);color:#f5dce3}.envelope{position:relative;width:min(340px,80vw);height:220px;margin:45px auto 5px;cursor:pointer;filter:drop-shadow(0 18px 35px #0008);transition:transform .3s}.envelope:hover{transform:translateY(-6px)}.env-body{position:absolute;inset:0;background:linear-gradient(145deg,#ffb5c8,#cb698b);border-radius:8px}.env-body:after{content:'';position:absolute;inset:0;clip-path:polygon(0 0,50% 60%,100% 0,100% 100%,0 100%);background:linear-gradient(145deg,#f7a3bb,#e187a5);border-radius:8px}.env-flap{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 60%);background:#ffc9d6;z-index:2;transform-origin:top;transition:transform .8s}.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}.seal{position:absolute;top:53%;left:50%;transform:translate(-50%,-50%);z-index:3;width:55px;height:55px;border-radius:50%;background:#7b2b4b;display:grid;place-items:center;color:#fff;font-size:24px}.envelope.open .seal{opacity:0}.letter{display:none;width:min(680px,100%);padding:clamp(25px,5vw,58px);border-radius:12px;background:#fff5ef;color:#4e2435;box-shadow:0 25px 90px #0008;text-align:left;margin:35px auto;animation:appear 1s ease}.letter.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}.letter h3{font:italic 34px 'Playfair Display',serif;color:#a04c70;text-align:center}.letter p{font-size:16px;line-height:2;white-space:pre-line}.final{min-height:90vh}.final img{width:min(280px,65vw);height:350px;object-fit:cover;border-radius:150px 150px 12px 12px;margin:25px 0;border:1px solid #ffffff66}.big-heart{width:95px;height:95px;fill:#f8a3bb;filter:drop-shadow(0 0 30px #ff86af);animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.17)}}footer{text-align:center;padding:30px;color:#bd8b9d;font-size:12px;letter-spacing:.1em}.reveal{display:none;animation:appear .8s}.reveal.show{display:block}@media(max-width:650px){.gallery{grid-template-columns:1fr;max-width:330px;gap:35px}.card:nth-child(2){transform:rotate(2deg)}.card:nth-child(3){transform:rotate(-2deg)}.hero-photo{height:370px}section{padding:75px 20px}.intro{padding-top:45px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}}</style></head><body><div class="sparkles" id="sparkles" aria-hidden="true"></div><main><section class="intro"><div class="eyebrow">28 OCTOBER 2025 — 28 OCTOBER 2026</div><h1>Our first<br><em>hello.</em></h1><p class="sub">One year ago, I met someone who would become my favourite person. This little corner of the world is just for you, Krithika.</p><img class="hero-photo" src="assets/photo1.jpg" alt="Our special moment together"><button class="pill" onclick="document.querySelector('#memories').scrollIntoView({behavior:'smooth'})">OUR LITTLE STORY ↓</button><div class="scroll">MADE WITH ALL MY HEART</div></section><section id="memories"><div class="eyebrow">THE LITTLE MOMENTS</div><h2>Every moment,<br><em>with you.</em></h2><p style="max-width:550px;color:#e6c4d1">The laughter, the silly moments, the hugs, and even the difficult days. They all belong to our story.</p><div class="gallery"><div class="card" style="--rot:-3deg"><img src="assets/photo1.jpg" alt="Us smiling together"><p>My favourite person</p></div><div class="card" style="--rot:2deg"><img src="assets/photo2.jpg" alt="A kiss surrounded by greenery"><p>My favourite place</p></div><div class="card" style="--rot:-2deg"><img src="assets/photo3.jpg" alt="A sweet moment together"><p>My favourite story</p></div></div></section><section><div class="eyebrow">365 DAYS SINCE WE MET</div><h2>Still <em>you.</em><br>Always you.</h2><p class="story">We might not have a perfect story. But if I could go back to the day we met, knowing everything we'd go through, I'd still choose you. Every single time.</p><button class="pill" onclick="document.querySelector('#letter-section').scrollIntoView({behavior:'smooth'})">THERE'S SOMETHING FOR YOU ↓</button></section><section id="letter-section"><div class="eyebrow">FROM MY HEART TO YOURS</div><h2>A letter <em>for you.</em></h2><p style="color:#e5b8c7">Tap the envelope, baby. I wrote this just for you.</p><div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open love letter" onclick="openLetter()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLetter()}"><div class="env-body"></div><div class="env-flap"></div><div class="seal">♥</div></div><div class="letter" id="letter"><h3>To my babyyy ❤️</h3><p>Happy 1 year since we met babyyy! 🥹❤️
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#200d1b">
+
+  <title>Krithika — Our First Hello ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --rose: #f6a9bd;
+      --cream: #fff0e9;
+      --bg: #200d1b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 20%, #6b2b4c80, transparent 55%),
+        radial-gradient(ellipse at 80% 75%, #60254280, transparent 55%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* FLOATING HEARTS */
+
+    .sparkles {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -60px;
+      animation: floatUp linear infinite;
+      opacity: 0.45;
+    }
+
+    .heart svg {
+      width: 100%;
+      height: 100%;
+      fill: #f6a9bd;
+      filter: drop-shadow(0 0 8px #ff90b5);
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(-12deg);
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 0.5;
+      }
+
+      85% {
+        opacity: 0.35;
+      }
+
+      100% {
+        transform: translateY(-115vh) rotate(20deg);
+        opacity: 0;
+      }
+    }
+
+    /* SECTIONS */
+
+    section {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 95px 20px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      color: #f9bac9;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+
+    h1 {
+      font-size: clamp(58px, 11vw, 130px);
+    }
+
+    h2 {
+      font-size: clamp(40px, 7vw, 76px);
+    }
+
+    h1 em, h2 em {
+      color: var(--rose);
+      font-weight: 500;
+    }
+
+    p {
+      line-height: 1.85;
+    }
+
+    /* INTRODUCTION */
+
+    .intro {
+      min-height: 100svh;
+    }
+
+    .intro .sub {
+      max-width: 550px;
+      color: #e5c9d2;
+      font-size: 17px;
+    }
+
+    .pill {
+      border: 1px solid #f8b8ca90;
+      background: #f4a7bf20;
+      color: #fff3f5;
+      border-radius: 99px;
+      padding: 16px 28px;
+      font: 600 12px 'DM Sans', sans-serif;
+      letter-spacing: 0.13em;
+      cursor: pointer;
+      margin-top: 28px;
+      transition: 0.3s;
+    }
+
+    .pill:hover {
+      background: #f4a7bf45;
+      transform: translateY(-3px);
+    }
+
+    .hero-photo {
+      width: min(340px, 72vw);
+      height: 420px;
+      object-fit: cover;
+      border-radius: 170px 170px 18px 18px;
+      box-shadow: 0 24px 100px #0009;
+      border: 1px solid #ffccda65;
+      margin-top: 30px;
+    }
+
+    .scroll {
+      position: absolute;
+      bottom: 30px;
+      color: #db9db0;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+    }
+
+    /* PHOTO GALLERY */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      width: min(1040px, 100%);
+      margin-top: 50px;
+    }
+
+    .card {
+      background: #ffffff0d;
+      border: 1px solid #ffffff24;
+      padding: 12px 12px 20px;
+      border-radius: 18px;
+      transform: rotate(var(--rot));
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: rotate(0) translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 11px;
+    }
+
+    .card p {
+      margin: 12px 0 0;
+      color: #f5c6d1;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    .story {
+      max-width: 730px;
+      font-size: clamp(18px, 2.5vw, 25px);
+      color: #f5dce3;
+    }
+
+    /* LOVE LETTER ENVELOPE */
+
+    .envelope {
+      position: relative;
+      width: min(340px, 80vw);
+      height: 220px;
+      margin: 45px auto 5px;
+      cursor: pointer;
+      filter: drop-shadow(0 18px 35px #0008);
+      transition: transform 0.3s;
+    }
+
+    .envelope:hover {
+      transform: translateY(-6px);
+    }
+
+    .env-body {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(145deg, #ffb5c8, #cb698b);
+      border-radius: 8px;
+    }
+
+    .env-body::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 0, 50% 60%, 100% 0, 100% 100%, 0 100%);
+      background: linear-gradient(145deg, #f7a3bb, #e187a5);
+      border-radius: 8px;
+    }
+
+    .env-flap {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 0, 100% 0, 50% 60%);
+      background: #ffc9d6;
+      z-index: 2;
+      transform-origin: top;
+      transition: transform 0.8s;
+    }
+
+    .envelope.open .env-flap {
+      transform: rotateX(180deg);
+      z-index: 0;
+    }
+
+    .seal {
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #7b2b4b;
+      display: grid;
+      place-items: center;
+    }
+
+    .seal svg {
+      width: 27px;
+      height: 27px;
+      fill: #fff;
+    }
+
+    .envelope.open .seal {
+      opacity: 0;
+    }
+
+    /* LETTER */
+
+    .letter {
+      display: none;
+      width: min(680px, 100%);
+      padding: clamp(25px, 5vw, 58px);
+      border-radius: 12px;
+      background: #fff5ef;
+      color: #4e2435;
+      box-shadow: 0 25px 90px #0008;
+      text-align: left;
+      margin: 35px auto;
+      animation: appear 1s ease;
+    }
+
+    .letter.show {
+      display: block;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .letter h3 {
+      font: italic 34px 'Playfair Display', serif;
+      color: #a04c70;
+      text-align: center;
+    }
+
+    .letter p {
+      font-size: 16px;
+      line-height: 2;
+      white-space: pre-line;
+    }
+
+    /* FINAL SURPRISE */
+
+    .final {
+      min-height: 90vh;
+    }
+
+    .final img {
+      width: min(280px, 65vw);
+      height: 350px;
+      object-fit: cover;
+      border-radius: 150px 150px 12px 12px;
+      margin: 25px 0;
+      border: 1px solid #ffffff66;
+    }
+
+    .big-heart {
+      width: 95px;
+      height: 95px;
+      fill: #f8a3bb;
+      filter: drop-shadow(0 0 30px #ff86af);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      50% {
+        transform: scale(1.17);
+      }
+    }
+
+    .reveal {
+      display: none;
+      animation: appear 0.8s;
+    }
+
+    .reveal.show {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #bd8b9d;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+
+    /* MOBILE RESPONSIVE */
+
+    @media (max-width: 650px) {
+      .gallery {
+        grid-template-columns: 1fr;
+        max-width: 330px;
+        gap: 35px;
+      }
+
+      .card:nth-child(2) {
+        transform: rotate(2deg);
+      }
+
+      .card:nth-child(3) {
+        transform: rotate(-2deg);
+      }
+
+      .hero-photo {
+        height: 370px;
+      }
+
+      section {
+        padding: 75px 20px;
+      }
+
+      .intro {
+        padding-top: 45px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- FLOATING HEARTS -->
+
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+      <div class="eyebrow">
+        28 OCTOBER 2025 — 28 OCTOBER 2026
+      </div>
+
+      <h1>
+        Our first<br>
+        <em>hello.</em>
+      </h1>
+
+      <p class="sub">
+        One year ago, I met someone who would become my favourite person.
+        This little corner of the world is just for you, Krithika.
+      </p>
+
+      <img
+        class="hero-photo"
+        src="photo1.jpg"
+        alt="Our special moment together"
+      >
+
+      <button class="pill" onclick="goTo('memories')">
+        OUR LITTLE STORY ↓
+      </button>
+
+      <div class="scroll">
+        MADE WITH ALL MY HEART
+      </div>
+
+    </section>
+
+    <!-- MEMORIES -->
+
+    <section id="memories">
+
+      <div class="eyebrow">
+        THE LITTLE MOMENTS
+      </div>
+
+      <h2>
+        Every moment,<br>
+        <em>with you.</em>
+      </h2>
+
+      <p style="max-width:550px;color:#e6c4d1">
+        The laughter, the silly moments, the hugs,
+        and even the difficult days.
+        They all belong to our story.
+      </p>
+
+      <div class="gallery">
+
+        <div class="card" style="--rot:-3deg">
+          <img src="photo1.jpg" alt="Us smiling together">
+          <p>My favourite person</p>
+        </div>
+
+        <div class="card" style="--rot:2deg">
+          <img src="photo2.jpg" alt="A kiss surrounded by greenery">
+          <p>My favourite place</p>
+        </div>
+
+        <div class="card" style="--rot:-2deg">
+          <img src="photo3.jpg" alt="A sweet moment together">
+          <p>My favourite story</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- OUR STORY -->
+
+    <section>
+
+      <div class="eyebrow">
+        365 DAYS SINCE WE MET
+      </div>
+
+      <h2>
+        Still <em>you.</em><br>
+        Always you.
+      </h2>
+
+      <p class="story">
+        We might not have a perfect story.
+        But if I could go back to the day we met,
+        knowing everything we'd go through,
+        I'd still choose you.
+        Every single time.
+      </p>
+
+      <button class="pill" onclick="goTo('letter-section')">
+        THERE'S SOMETHING FOR YOU ↓
+      </button>
+
+    </section>
+
+    <!-- LOVE LETTER -->
+
+    <section id="letter-section">
+
+      <div class="eyebrow">
+        FROM MY HEART TO YOURS
+      </div>
+
+      <h2>
+        A letter <em>for you.</em>
+      </h2>
+
+      <p style="color:#e5b8c7">
+        Tap the envelope, baby. I wrote this just for you.
+      </p>
+
+      <div
+        class="envelope"
+        id="envelope"
+        role="button"
+        tabindex="0"
+        aria-label="Open love letter"
+        onclick="openLetter()"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLetter()}"
+      >
+
+        <div class="env-body"></div>
+        <div class="env-flap"></div>
+
+        <div class="seal">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/>
+          </svg>
+        </div>
+
+      </div>
+
+      <div class="letter" id="letter">
+
+        <h3>To my babyyy ❤️</h3>
+
+        <p>Happy 1 year since we met babyyy! 🥹❤️
 
 I still can't believe it's already been a year since you came into my life.... We both know we fight a lot.... arguments misunderstand each other and sometimes hurt each other.... But baby even after all those fights it's still you... It's always been you... 🥺❤️
 
@@ -6,4 +584,191 @@ I know I'm not perfect and I'm sorry for the times I've hurt you.... But I never
 
 Even on our worst days you're still my favourite person..... If I had the chance to go back to the day we met knowing everything we've been through I'd still choose you without thinking twice...
 
-I love you so much pana. Let's keep choosing each other even on the difficult days.... I want you by my side for a long long time. 🥹💗</p><div style="text-align:right;font-family:'Playfair Display',serif;font-style:italic;color:#a04c70;font-size:24px">Forever yours ❤️</div></div><button class="pill" id="lastBtn" style="display:none" onclick="document.querySelector('#ending').scrollIntoView({behavior:'smooth'})">ONE LAST THING ↓</button></section><section id="ending" class="final"><div class="eyebrow">HERE'S TO US</div><h2>One year down.<br><em>So much more to come.</em></h2><img src="assets/photo2.jpg" alt="Us holding each other"><p>Krithika, you are still my favourite choice.</p><button class="pill" onclick="showFinal()">TAP FOR ONE LAST SURPRISE</button><div id="reveal" class="reveal"><svg class="big-heart" viewBox="0 0 24 24" aria-label="Heart"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/></svg><h2 style="font-size:clamp(40px,8vw,70px)">I love you, <em>pana.</em></h2><p>Happy one year since we met, babyyy. ❤️</p></div></section></main><footer>OUR FIRST HELLO · 28.10.2025 · MADE ONLY FOR KRITHIKA</footer><script>const holder=document.getElementById('sparkles');function heart(x,y,size,duration,delay){const d=document.createElement('div');d.className='heart';d.style.left=x+'%';d.style.width=size+'px';d.style.height=size+'px';d.style.animationDuration=duration+'s';d.style.animationDelay=delay+'s';d.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/></svg>';holder.appendChild(d);if(y)d.style.bottom=y+'px';return d}for(let i=0;i<22;i++)heart(Math.random()*100,0,10+Math.random()*20,12+Math.random()*16,-Math.random()*30);function openLetter(){document.getElementById('envelope').classList.add('open');setTimeout(()=>{document.getElementById('letter').classList.add('show');document.getElementById('lastBtn').style.display='inline-block';document.getElementById('letter').scrollIntoView({behavior:'smooth',block:'center'})},550)}function showFinal(){document.getElementById('reveal').classList.add('show');for(let i=0;i<30;i++){const d=heart(10+Math.random()*80,-100,14+Math.random()*30,4+Math.random()*4,0);setTimeout(()=>d.remove(),9000)}document.getElementById('reveal').scrollIntoView({behavior:'smooth',block:'center'})}</script></body></html>
+I love you so much pana. Let's keep choosing each other even on the difficult days.... I want you by my side for a long long time. 🥹💗</p>
+
+        <div style="
+          text-align:right;
+          font-family:'Playfair Display',serif;
+          font-style:italic;
+          color:#a04c70;
+          font-size:24px;
+        ">
+          Forever yours ❤️
+        </div>
+
+      </div>
+
+      <button
+        class="pill"
+        id="lastBtn"
+        style="display:none"
+        onclick="goTo('ending')"
+      >
+        ONE LAST THING ↓
+      </button>
+
+    </section>
+
+    <!-- ENDING -->
+
+    <section id="ending" class="final">
+
+      <div class="eyebrow">
+        HERE'S TO US
+      </div>
+
+      <h2>
+        One year down.<br>
+        <em>So much more to come.</em>
+      </h2>
+
+      <img
+        src="photo2.jpg"
+        alt="Us holding each other"
+      >
+
+      <p>
+        Krithika, you are still my favourite choice.
+      </p>
+
+      <button class="pill" onclick="showFinal()">
+        TAP FOR ONE LAST SURPRISE
+      </button>
+
+      <div id="reveal" class="reveal">
+
+        <svg class="big-heart" viewBox="0 0 24 24" aria-label="Heart">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/>
+        </svg>
+
+        <h2 style="font-size:clamp(40px,8vw,70px)">
+          I love you, <em>pana.</em>
+        </h2>
+
+        <p>
+          Happy one year since we met, babyyy. ❤️
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    OUR FIRST HELLO · 28.10.2025 · MADE ONLY FOR KRITHIKA
+  </footer>
+
+  <script>
+
+    /* NAVIGATION */
+
+    function goTo(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    /* SVG FLOATING HEARTS */
+
+    const holder = document.getElementById('sparkles');
+
+    function heart(x, y, size, duration, delay) {
+
+      const d = document.createElement('div');
+
+      d.className = 'heart';
+
+      d.style.left = x + '%';
+      d.style.width = size + 'px';
+      d.style.height = size + 'px';
+      d.style.animationDuration = duration + 's';
+      d.style.animationDelay = delay + 's';
+
+      d.innerHTML = `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/>
+        </svg>
+      `;
+
+      holder.appendChild(d);
+
+      if (y) {
+        d.style.bottom = y + 'px';
+      }
+
+      return d;
+    }
+
+    /* BACKGROUND HEARTS */
+
+    for (let i = 0; i < 22; i++) {
+
+      heart(
+        Math.random() * 100,
+        0,
+        10 + Math.random() * 20,
+        12 + Math.random() * 16,
+        -Math.random() * 30
+      );
+
+    }
+
+    /* OPEN LOVE LETTER */
+
+    let letterOpened = false;
+
+    function openLetter() {
+
+      if (letterOpened) return;
+
+      letterOpened = true;
+
+      document.getElementById('envelope').classList.add('open');
+
+      setTimeout(() => {
+
+        document.getElementById('letter').classList.add('show');
+
+        document.getElementById('lastBtn').style.display = 'inline-block';
+
+        document.getElementById('letter').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+
+      }, 550);
+
+    }
+
+    /* FINAL SURPRISE */
+
+    function showFinal() {
+
+      document.getElementById('reveal').classList.add('show');
+
+      for (let i = 0; i < 30; i++) {
+
+        const d = heart(
+          10 + Math.random() * 80,
+          -100,
+          14 + Math.random() * 30,
+          4 + Math.random() * 4,
+          0
+        );
+
+        setTimeout(() => d.remove(), 9000);
+
+      }
+
+      document.getElementById('reveal').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+
+    }
+
+  </script>
+
+</body>
+</html>
